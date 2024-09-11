@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "MoodleEasyRelogin",
+    "version": "1.0.0",
+    "description": "Moodleの再ログイン画面のどこをクリックしても学認画面へ移行するようにします",
+    "icons": {
+      "16": "Images/icon16.png",
+      "48": "Images/icon48.png",
+      "128": "Images/icon128.png"
+    },
+    "content_scripts": [{
+      "matches": ["https://cclms.kyoto-su.ac.jp/login/index.php"],
+      "js": [
+        "content.js"
+      ]
+    }]
+  }
